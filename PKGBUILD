@@ -1,7 +1,7 @@
 # $Id$
 
 pkgname=sway
-pkgver=0.14
+pkgver=0.14.0
 _pkgver=${pkgver/.r/-r}
 #_comm=c29e5bbde84260763eaece5b47c219fd1fff7883
 pkgrel=1
@@ -26,7 +26,7 @@ source=(
 	"$pkgname-$pkgver.tar.gz::https://github.com/SirCmpwn/$pkgname/archive/${_pkgver}.tar.gz"
 )
 install="$pkgname.install"
-sha256sums=('c1da920ddb7af5b560a52c8a4e600ad63a311f6fbaa986aed6bcfc14ffd0ca28')
+sha256sums=('e63efee81cd3952ee00c7bd379cf90b065530b03423f593895584aa51e9c7f1b')
 
 build() {
         SRC=$srcdir/sway-${_pkgver}
